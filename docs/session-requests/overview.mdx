@@ -1,9 +1,11 @@
 ---
-title: Request authentication
-description: Learn about various ways to make authenticated requests to the backend when using Clerk SDKs.
+title: Session Requests
+description: Learn about various ways to authenticate users to your backend using Clerk SDKs.
 ---
 
-A request is considered “authenticated” when the backend can securely identify the user and device that is making the request. The reasons for making authenticated requests to the backend include:
+Your application will likely have users sending requests to your backend. You can **authenticate** these requests by validating a [session token](/docs/session-requests/session-tokens) in the request.
+
+When your backend authenticates a session request, it can identify the user and device that is making the request. The reasons for making authenticated requests to the backend include:
 
 - Associating the user with the action being performed
 - Ensuring the user has permission to make the request
